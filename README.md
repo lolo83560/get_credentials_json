@@ -28,7 +28,7 @@ With default device
 $ ./target/release/librespot-auth
 Open Spotify and select output device: CredentialsGenerator
 ```
-With precising and explicit device name
+With precising an explicit device name
 ```bash
 $ ./target/release/librespot-auth --name "Example Speaker"
 Open Spotify and select output device: Example Speaker

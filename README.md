@@ -4,7 +4,7 @@ A simple program for populating a `credentials.json` via Spotify's zeroconf auth
 
 ## Optional Arguments
 
-- `--name`: Name of the virtual speaker (default: "GredentialsGenerator").
+- `--name`: Name of the virtual speaker (default: "CredentialsGenerator").
 - `--path`: Target path for credentials (default: `credentials.json` relative to execution).
 
 ## How It Works

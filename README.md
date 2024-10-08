@@ -23,9 +23,15 @@ Install the rust toolchain (see https://rustup.rs/), and run `cargo build --rele
 
 ## Example Usage (spotifyd)
 
+With default device
+```bash
+$ ./target/release/librespot-auth
+Open Spotify and select output device: CredentialsGenerator
+```
+With precising and explicit device name
 ```bash
 $ ./target/release/librespot-auth --name "Example Speaker"
 Open Spotify and select output device: Example Speaker
 ```
 
-Open the Spotify client from a machine on the same network as you ran this, ensuring no proxy is in use that may interfere with zeroconf. Select the speaker you just defined, i.e. "Example Speaker", as an output device. The credentials are then saved to `credentials.json`. Ensure spotifyd is stopped, i.e. `sudo systemctl stop spotifyd`, copy this file to your spotifyd `cache_directory`, and then start spotifyd again (`sudo systemctl start spotifyd`).
+Open the Spotify client from a machine on the same network as you ran this, ensuring no proxy is in use that may interfere with zeroconf (local firewall app might require turning-off momentarily). Select the speaker you just defined, i.e. "Example Speaker" or "CredentialsGenerator" in examples above, as an output device. The credentials are then saved to `credentials.json`. Ensure spotifyd is stopped, i.e. `sudo systemctl stop spotifyd`, copy this file to your spotifyd `cache_directory`, and then start spotifyd again (`sudo systemctl start spotifyd`).
